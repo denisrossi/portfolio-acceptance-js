@@ -21,7 +21,7 @@
 		"webdriver:update": "webdriver-manager update",
 		"webdriver:start": "webdriver-manager start --detach",
 		"webdriver:clean": "webdriver-manager clean",
-		"webdriver:shutdown": "webdriver-namanger shutdown",
+		"webdriver:shutdown": "webdriver-manager shutdown",
 		"verify": "npm test"
 	},
 	"devDependencies": {
