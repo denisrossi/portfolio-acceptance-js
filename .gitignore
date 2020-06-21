@@ -1,5 +1,4 @@
 .project
 node_modules/
 .cucumber/
-target/
 build/
