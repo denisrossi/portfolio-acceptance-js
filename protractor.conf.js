@@ -6,13 +6,12 @@ const
 
 exports.config = {
 	logLevel: "DEBUG",
-    SELENIUM_PROMISE_MANAGER: false,
+	SELENIUM_PROMISE_MANAGER: false,
 
-	seleniumAddress: 'http://localhost:4444/wd/hub',
 
-    allScriptsTimeout: 11000,
+	allScriptsTimeout: 11000,
 
-    specs: [ "features/**/*.feature"],
+	specs: ["features/**/*.feature"],
 
 	// Tell Protractor to use the Serenity/JS framework Protractor Adapter
 	framework: "custom",
@@ -30,24 +29,24 @@ exports.config = {
 	},
 
 	cucumberOpts: {
-        require: [
-            "features/step_definitions/**/*.ts",
-            "features/support/setup.ts"
-        ],
-        "require-module": ["ts-node/register"]
-    },
+		require: [
+			"features/step_definitions/**/*.ts",
+			"features/support/setup.ts"
+		],
+		"require-module": ["ts-node/register"]
+	},
 
-    capabilities: {
-        browserName: 'chrome',
+	capabilities: {
+		browserName: 'chrome',
 
-        chromeOptions: {
-            args: [
-                '--disable-infobars',
-                '--no-sandbox',
-                '--disable-gpu',
-                '--window-size=1024x768',
-                '--headless',
-            ]
-        }
-    }
+		chromeOptions: {
+			args: [
+				'--disable-infobars',
+				'--no-sandbox',
+				'--disable-gpu',
+				'--window-size=1024x768',
+				'--headless',
+			]
+		}
+	}
 };
