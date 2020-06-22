@@ -1,4 +1,4 @@
-Feature: Home page
+Feature: Home
 
   Scenario: Visit the home page
     When Addison navigates to https://denisrossi.github.io/
